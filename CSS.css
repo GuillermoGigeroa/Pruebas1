@@ -1,0 +1,41 @@
+#cajaBotones {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#cajaAnimada {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#outsideBox {
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+    background-color: rosybrown;
+    height: 103px;
+    width: 90%;
+    position: relative;
+}
+
+#insideBox {
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    background-image: url("https://e7.pngegg.com/pngimages/862/39/png-clipart-emoji-domain-smiley-glasses-emoji-smiley-emoticon.png");
+    background-position: center;
+    background-size: 62px;
+    background-color: yellow;
+    height: 50%;
+    width: 50px;
+    position: absolute;
+    padding: 0;
+    top: 25px;
+    left: 1px;
+    border-radius: 100%;
+}
