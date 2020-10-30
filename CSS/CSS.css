@@ -1,11 +1,40 @@
 #cajaBotones {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
+#cajaBotones a {
+    background-color:rgb(98, 98, 98);
+    color: white;
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgb(98, 98, 98);
+    border-width: 2px;
+    padding: 8px;
+    font-size: medium;
+    border-style: none;
+}
+
+#cajaBotones a:hover {
+    background-color:rgb(85, 85, 85);
+    color: white;
+}
+
+.izquierda {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.derecha {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 #cajaAnimada {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 5px;
@@ -21,6 +50,7 @@
     height: 103px;
     width: 90%;
     position: relative;
+    box-shadow: 5px 5px 5px darkslategrey;
 }
 
 #insideBox {
@@ -29,7 +59,7 @@
     border-style: solid;
     background-image: url("https://e7.pngegg.com/pngimages/862/39/png-clipart-emoji-domain-smiley-glasses-emoji-smiley-emoticon.png");
     background-position: center;
-    background-size: 62px;
+    background-size: 72px;
     background-color: yellow;
     height: 50%;
     width: 50px;
@@ -38,8 +68,54 @@
     top: 25px;
     left: 1px;
     border-radius: 100%;
+    box-shadow: 2px 2px 5px darkslategrey;
 }
 
 #fondo {
     background-color: grey;
+}
+
+#cajaSemaforo {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+}
+
+#semaforo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: goldenrod;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 5px 5px 5px darkslategrey;
+}
+
+.luz {
+    background-color: rgb(20, 20, 20);
+    margin-bottom: 3px;
+    border-radius: 100%;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    width: 50px;
+    height: 50px;
+}
+
+#luzRoja:hover {
+    background-color: red;
+    margin-bottom: 3px;
+}
+
+#luzAmarilla:hover {
+    background-color: yellow;
+    margin-bottom: 3px;
+}
+
+#luzVerde:hover {
+    background-color: green;
 }
