@@ -75,14 +75,14 @@
     background-color: grey;
 }
 
-#cajaSemaforo {
+.cajaSemaforo {
     margin-top: 15px;
     display: flex;
     justify-content: center;
     background-color: grey;
 }
 
-#semaforo {
+.semaforo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -93,11 +93,13 @@
     border-style: solid;
     border-width: 2px;
     box-shadow: 5px 5px 5px darkslategrey;
+    max-width: fit-content;
 }
 
 .luz {
     background-color: rgb(20, 20, 20);
-    margin-bottom: 3px;
+    margin-top: 1px;
+    margin-bottom: 1px;
     border-radius: 100%;
     border-color: black;
     border-style: solid;
@@ -108,14 +110,19 @@
 
 #luzRoja:hover {
     background-color: red;
-    margin-bottom: 3px;
 }
 
 #luzAmarilla:hover {
     background-color: yellow;
-    margin-bottom: 3px;
 }
 
 #luzVerde:hover {
     background-color: green;
+}
+
+#contenedorDeSemaforos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }

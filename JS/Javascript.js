@@ -58,3 +58,56 @@ function pararTodo(){
     clearInterval(izquierda);
     clearInterval(derecha);
 };
+
+function encenderRojo(){
+    encenderLuz("luzRoja_animada","red");
+    apagarLuz("luzAmarilla_animada");
+    apagarLuz("luzVerde_animada");
+};
+
+function encenderAmarillo(){
+    encenderLuz("luzAmarilla_animada","yellow");
+    apagarLuz("luzRoja_animada");
+    apagarLuz("luzVerde_animada");
+};
+
+function encenderVerde(){
+    encenderLuz("luzVerde_animada","green");
+    apagarLuz("luzAmarilla_animada");
+    apagarLuz("luzRoja_animada");
+};
+
+function encenderLuz(id_luz,color){
+    let luz = document.getElementById(id_luz);
+    luz.style.backgroundColor = color;
+};
+
+function apagarLuz(id_luz){
+    let luz = document.getElementById(id_luz);
+    luz.style.backgroundColor = "rgb(20, 20, 20)";
+};
+
+function numeroRandom(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+window.onload = activarSemaforo;
+
+function activarSemaforo(){
+    let luces = 0;
+    luces = numeroRandom(0,3);
+    switch (luces){
+        case 0:
+            {encenderRojo();luces++;}
+            break;
+        case 1:
+            {encenderAmarillo();luces++;}
+            break;
+        case 2:
+            {encenderVerde();luces++;}
+            break;
+        default:
+            {}
+            break;
+    }
+};
